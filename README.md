@@ -1,8 +1,8 @@
-# 12TipsAndTricksRysGitTutorial
+# [go back to content](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
 
 12 Tips And Tricks Rys Git Tutorial
 
-# 12. [Tips and Tricks](https://github.com/c4arl0s/RysGitTutorial#12-tips-and-tricks-1)
+# 12. [Tips and Tricks - Content](https://github.com/c4arl0s/RysGitTutorial#12-tips-and-tricks-1)
  * [Archive The repository](https://github.com/c4arl0s/RysGitTutorial#-archive-the-repository)
  * [Bundle the Repository](https://github.com/c4arl0s/RysGitTutorial#-bundle-the-repository)
  * [Ignore a File](https://github.com/c4arl0s/RysGitTutorial#-ignore-a-file)
@@ -78,9 +78,9 @@ Mon Jul 06 ~/iOS/repo-bundle-copy
 $ git log
 ```
 
-The log output should show you the entire history of our **master branch**, and **repo.bundle+* is also the **origin remote** for the new repository. This is the exact behavior we encountered when cloning a **"normal"** Git repository.
+The log output should show you the entire history of our **master branch**, and **repo.bundle** is also the **origin remote** for the new repository. This is the exact behavior we encountered when cloning a **"normal"** Git repository.
 
-Bundles are a great way to backup entire Git repositoies (not just an isolated snapshot like **git archive**). They also let you share changes without a network connection. For example, if you didn't want to configure the SSH accounts for a private Git Server, you could bundle up the repository, put it on a jump drive, and walk it over to your co-worker's computer. Of course, this could become a bit tiresome for active projects.
+Bundles are a great way to backup entire Git repositoies (not just an isolated snapshot like **git archive**). They also let you share changes without a network connection. For example, if you didn't want to configure the **SSH** accounts for a private Git Server, you could bundle up the repository, put it on a jump drive, and walk it over to your co-worker's computer. Of course, this could become a bit tiresome for active projects.
 
 We will not be needing the repo.bundle file and repo-copy folder, so go ahead and delete them now.
 
@@ -219,7 +219,7 @@ HEAD is now at da3867e Add .gitignore file
 
 # 	* [Hook into Git's internals](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
 
-Arguably, Git's most useful configuration options are its **hooks*. A hook is a script that Git executes every time a particular event occurs in a repository. In this section, we will take a **hands-on** look at Git hooks by automatically publishing our website every time someone pushes to the central-repo.git repository.
+Arguably, Git's most useful configuration options are its **hooks**. A hook is a script that Git executes every time a particular event occurs in a repository. In this section, we will take a **hands-on** look at Git hooks by automatically publishing our website every time someone pushes to the **central-repo.git** repository.
 
 ```console
 Fri Jul 10 ~/iOS 
@@ -265,7 +265,7 @@ tar -xf ../RysGitTutorialMyWebsite.tar -C ..RysGitTutorialMyWebsite
 
 While shell scripts are outside the scope of this tutorial, the majority of commands in the above code listing should be familiar to you. In short, this new **post-update** script creates an archive of the **master** branch, then exports it into a directory called **RysGitTutorialMyWebsite** repository.
 
-We can see the script in action by pushing a branch to the central-repo.git repository.
+We can see the script in action by pushing a branch to the **central-repo.git** repository.
 
 ```console
 Fri Jul 10 ~/iOS/RysGitTutorialRepository 
@@ -298,7 +298,7 @@ This is a simple unoptimized example, but **Git hooks** are infinitely versatile
 
 Up until now, we have been using **git log --stat** to view the changes introduced by new commits. However, this does not show us which lines have been change in any given file. For this level of detail, we need the **git diff** command. Let's take a look at the updates from the **"Add a pink block of color"** commit
 
-This will output the diff between the "Add a pink block of color" commit (HEAD~1) and the one before it (HEAD~2):
+This will output the diff between the "Add a pink block of color" commit (HEAD\~1) and the one before it (HEAD\~2):
 
 ```console
 Mon Jul 13 ~/iOS/RysGitTutorialRepository 
@@ -327,7 +327,7 @@ index c349233..431492b 100644
  </html>
 ```
 
-This diff looks nearly identical to the patches we created in the previous module, and it shows exactly what was added to get from HEAD~2 to HEAD~1. The **git diff** command is incredibly useful for pinpointing contributions from other developers. For example, we could have used the following to view the differences between John's pink-page branch and our master before merging it into the project in Distributed Workflows.
+This diff looks nearly identical to the patches we created in the previous module, and it shows exactly what was added to get from HEAD\~2 to HEAD\~1. The **git diff** command is incredibly useful for pinpointing contributions from other developers. For example, we could have used the following to view the differences between John's pink-page branch and our master before merging it into the project in Distributed Workflows.
 
 ```console
 diff --git a/.gitignore b/.gitignore
@@ -474,7 +474,7 @@ $ git check -b test
 Switched to a new branch 'test'
 ```
 
-Git stores these aliases in a global config file, similar to the **local config** file we looked at in Mary's repository (.git/config). By default, global configurations reside in ~/.gitconfig, where the ~ character represents your home directory. This file should resemble the following.
+Git stores these aliases in a global config file, similar to the **local config** file we looked at in Mary's repository (.git/config). By default, global configurations reside in **~/.gitconfig**, where the ~ character represents your home directory. This file should resemble the following.
 
 ```console
 Tue Jul 14 ~/iOS/RysGitTutorialRepository 
