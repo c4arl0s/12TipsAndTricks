@@ -1,24 +1,22 @@
-# [go back to content](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# [go back to content](https://github.com/c4arl0s/RysGitTutorial#rys-git-tutorial)
 
-12 Tips And Tricks Rys Git Tutorial
-
-# 12. [Tips and Tricks - Content](https://github.com/c4arl0s/RysGitTutorial#12-tips-and-tricks-1)
- * [Archive The repository](https://github.com/c4arl0s/RysGitTutorial#-archive-the-repository)
- * [Bundle the Repository](https://github.com/c4arl0s/RysGitTutorial#-bundle-the-repository)
- * [Ignore a File](https://github.com/c4arl0s/RysGitTutorial#-ignore-a-file)
- * [Stash Uncommitted Changes](https://github.com/c4arl0s/RysGitTutorial#-stash-uncommitted-changes)
- * [Hook into Git's internals](https://github.com/c4arl0s/RysGitTutorial#-hook-into-gits-internals)
- * [View Diffs Between commits](https://github.com/c4arl0s/RysGitTutorial#-view-diffs-between-commits)
- * [Reset and checkout files](https://github.com/c4arl0s/RysGitTutorial#-reset-and-checkout-files)
- * [Aliases and Other Configurations](https://github.com/c4arl0s/RysGitTutorial#-aliases-and-other-configurations)
- * [Conclusion](https://github.com/c4arl0s/RysGitTutorial#-conclusion-10)
- * [Quick Reference](https://github.com/c4arl0s/RysGitTutorial#-quick-reference-6)
+# [12 Tips and Tricks - Content](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#go-back-to-content)
+ * [Archive The repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-archive-the-repository)
+ * [Bundle the Repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-bundle-the-repository)
+ * [Ignore a File](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-ignore-a-file)
+ * [Stash Uncommitted Changes](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-stash-uncommitted-changes)
+ * [Hook into Git's internals](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-hook-into-gits-internals)
+ * [View Diffs Between commits](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-view-diffs-between-commits)
+ * [Reset and checkout files](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-reset-and-checkout-files)
+ * [Aliases and Other Configurations](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-aliases-and-other-configurations)
+ * [Conclusion](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-conclusion)
+ * [Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
  
- # 12. [Tips and Tricks](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+ # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 This module presents a broad survey of useful Git utilities. We will take a step back from the theoretical aspects of Git and focus on common tasks like preparing a project for release and backing up a repository. While working through this module, your goal shouldn't be to understand why they were created and when they might come in handy.
 
-# 	* [Archive The repository](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Archive The repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 First, let's export our repository into a ZIP archive. Run the following command in your local copy of my git repository, in this case RysGitTutorialRepository.
 
@@ -27,7 +25,7 @@ Sun Jul 05 ~/iOS/RysGitTutorialRepository
 $ git archive master --format=zip --output=../website-Jul-05-2020.zip
 ```
 
-or, for Unix users that would prefer a tarball:
+Or, for Unix users that would prefer a tarball:
 
 ```console
 Sun Jul 05 ~/iOS/RysGitTutorialRepository 
@@ -38,7 +36,7 @@ This takes the current **master** branch and places all of its files into a ZIP 
 
 You can send the resulting archive to a client for review, even if they don't have Git installed on their machine. This is also an easy way to create Git-independent backups of important revisions, which is always a good idea.
 
-# 	* [Bundle the Repository](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Bundle the Repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 Similar to the **git archive** command, **git bundle** turns a repository into a single file. However, in this case, the file retains the versioning information of the entire project. Try running the following command.
 
@@ -85,7 +83,7 @@ Bundles are a great way to backup entire Git repositoies (not just an isolated s
 We will not be needing the repo.bundle file and repo-copy folder, so go ahead and delete them now.
 
 
-# 	* [Ignore a File](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Ignore a File](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 Remember that Git does not automatically track files because we don't want to record generarted files llike C binaris or compiled Phyton modules. But, seeing these files under the **"Untracked files"** list in **git status** can get confusing for large projects, so Git lets us ignore content using a special text file called **.gitignore**. Each file or directory stored in **.gitignore** will be invisible to Git.
 
@@ -147,7 +145,7 @@ You can also specify entire directories in **.gitignore** or use the * wildcard 
 *.exe
 ```
 
-# 	* [Stash Uncommitted Changes](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Stash Uncommitted Changes](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 Next, we will take a brief look at **stashing**, which conveniently **"Staches"** away uncommitted changes. Open up **style.css** and change the h1 element to:
 
@@ -217,7 +215,7 @@ $ git reset --hard
 HEAD is now at da3867e Add .gitignore file
 ```
 
-# 	* [Hook into Git's internals](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Hook into Git's internals](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 Arguably, Git's most useful configuration options are its **hooks**. A hook is a script that Git executes every time a particular event occurs in a repository. In this section, we will take a **hands-on** look at Git hooks by automatically publishing our website every time someone pushes to the **central-repo.git** repository.
 
@@ -294,7 +292,7 @@ after the central repository receives the new master branch, our **post-update**
 
 This is a simple unoptimized example, but **Git hooks** are infinitely versatile. Each of the **.sample** scripts in the hooks directory represents different event that you can listen for, an each of them can do anything from automatically creating and publishing releases to enforcing a commit policy,  making sure a project compiles, and of course, publishing websites (that means no more cluncy FTP uploads). Hooks are even configured on a per-repository basis, which means you can run different scripts in your local repository than your central repository.
 
-# 	* [View Diffs Between commits](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [View Diffs Between commits](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 Up until now, we have been using **git log --stat** to view the changes introduced by new commits. However, this does not show us which lines have been change in any given file. For this level of detail, we need the **git diff** command. Let's take a look at the updates from the **"Add a pink block of color"** commit
 
@@ -404,11 +402,11 @@ index 370563f..14728e6 100644
 
 A plain old **git diff** will not output anything after the **blue.html** is added to the staging area, but the changes are now visible through the **--cached** flag. These are the three main configurations of the **git diff** command.
 
-# 	* [Reset and checkout files](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Reset and checkout files](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 We have used **git reset** and **git checkout** many times throughout this tutorial; however, we have only seen them work with **branches/commits**. You can also reset and checkout individual files, which slightly alters the behavior of both commands.
 
-The **git reset** we are accustomed to moves the current branch to a new commit and optionally updates the working directory to match. But when we pass a file path, **git reset** updates the *+staging area** to match the given commit instead of the working directory, and it does not move the current branch pointer. This means we can remove **blue.html** from the staged snapshot with the following command.
+The **git reset** we are accustomed to moves the current branch to a new commit and optionally updates the working directory to match. But when we pass a file path, **git reset** updates the **staging area** to match the given commit instead of the working directory, and it does not move the current branch pointer. This means we can remove **blue.html** from the staged snapshot with the following command.
 
 ```console
 Mon Jul 13 ~/iOS/RysGitTutorialRepository 
@@ -453,7 +451,7 @@ Our **blue.html** file now looks exactly like the version stored in **HEAD**, an
 
 To summarize the file-path behavior of **git reset** and **git checkout**, both take a committed snapshot as an reference point and make a file in the stagging area or the working directory match that reference, respectively.
 
-# 	* [Aliases and Other Configurations](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Aliases and Other Configurations](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 Typing **git checkout** every time you wanted to see a new branch over the last ten modules has been a bit verbose. Fortunately, **Git** lets you create **aliases**, which are shortcuts to other commands. Let's create a few aliases for our most common commands:
 
@@ -513,7 +511,7 @@ This makes sure Git colorized the output of **git status** and that it uses the 
 
 Git includes a long list of configuration options, all of which can be found in the official manual. Note that storing your global configuration n a plaintext file makes it incredibly easy to transfer your settings to a new Git installation: just copy ~/.gitconfig onto your new machine.
 
-# 	* [Conclusion](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Conclusion](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 In this module, we learned how to export snapshots, backup repositories, ignore files, stash temporary changes, hook into Git's internals, generate diffs, reset individual files, and create shorter aliases for common commands. While it is impossible to cover all of Git's supporting features in hands-on guide such as this, I hope that you now have a clearer picture of Git's numerous capabilities.
 
@@ -521,7 +519,7 @@ With all of these convenient features, it is easy to get so caught up in designi
 
 The final module will go a long way towards helping you realize the full potential of Git's version control model. We will explore Git's internal database by manually inspecting and creating snapshots. Equipped with this low-level knowledge, you will be more that ready to venture out into the reality of Git-base project management.
 
-# 	* [Quick Reference](https://github.com/c4arl0s/RysGitTutorial#rysgittutorial)
+# 	* [Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 ```console
 $ git archive branchName --format=zip --output=fileName
