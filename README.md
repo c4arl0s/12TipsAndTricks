@@ -1,18 +1,19 @@
 # [go back to content](https://github.com/c4arl0s/RysGitTutorial#rys-git-tutorial)
 
 # [12 Tips and Tricks - Content](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#go-back-to-content)
- * [Archive The repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-archive-the-repository)
- * [Bundle the Repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-bundle-the-repository)
- * [Ignore a File](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-ignore-a-file)
- * [Stash Uncommitted Changes](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-stash-uncommitted-changes)
- * [Hook into Git's internals](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-hook-into-gits-internals)
- * [View Diffs Between commits](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-view-diffs-between-commits)
- * [Reset and checkout files](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-reset-and-checkout-files)
- * [Aliases and Other Configurations](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-aliases-and-other-configurations)
- * [Conclusion](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-conclusion)
- * [Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
+
+1. [x] [1. Archive The repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-archive-the-repository)
+2. [x] [2. Bundle the Repository](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-bundle-the-repository)
+3. [x] [3. Ignore a File](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-ignore-a-file)
+4. [x] [4. Stash Uncommitted Changes](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-stash-uncommitted-changes)
+5. [x] [5. Hook into Git's internals](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-hook-into-gits-internals)
+6. [x] [6. View Diffs Between commits](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-view-diffs-between-commits)
+7. [x] [7. Reset and checkout files](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-reset-and-checkout-files)
+8. [x] [8. Aliases and Other Configurations](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-aliases-and-other-configurations)
+9. [x] [9. Conclusion](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-conclusion)
+10. [x] [10. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
  
- # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
+# [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 This module presents a broad survey of useful Git utilities. We will take a step back from the theoretical aspects of Git and focus on common tasks like preparing a project for release and backing up a repository. While working through this module, your goal shouldn't be to understand why they were created and when they might come in handy.
 
