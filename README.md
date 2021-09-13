@@ -14,7 +14,7 @@
 10. [x] [10. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
 11. [x] [11. How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricks#11-how-to-create-a-global-gitignore-file)
 12. [x] [12. How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricks#12-how-to-create-a-pull-request-from-your-local-branch)
-13. [x] [How to fetch a branch from another team member and merge]()
+13. [x] [13. How to fetch a branch from another team member and merge](https://github.com/c4arl0s/12TipsAndTricks#13-how-to-fetch-a-branch-from-another-team-member-and-merge)
 
 # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
@@ -638,5 +638,5 @@ $ git merge --no-ff CSC/13-how-to-fetch-a-branch-and-merge
 4. Step 4: Push the current branch (master) to origin.
 
 ```console
-git push origin master
+$ git push origin master
 ```
