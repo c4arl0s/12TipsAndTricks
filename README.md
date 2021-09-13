@@ -13,7 +13,7 @@
 9. [x] [9. Conclusion](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-conclusion)
 10. [x] [10. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
 11. [x] [11. How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricks#11-how-to-create-a-global-gitignore-file)
-12. [x] [12. How to create a pull request from your local branch]()
+12. [x] [12. How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricks#12-how-to-create-a-pull-request-from-your-local-branch)
  
 # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
@@ -594,7 +594,7 @@ Now each commit you will not be able to add any `.DS_Store` file.
 
 > If you already add a .DS_Store file in your repo, you have to delete it manually.
 
-12. [How to create a pull request from your local branch]()
+# 12. [How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 You can create a pull request on your own project just pushing your branch
 
@@ -606,4 +606,7 @@ $ git push origin <nameOfTheBranch>
 
 Then on Github will appear the message that you can generate a pull request, follow the instructions and ask for the pull request, someone in the project then can merge your branch on main or develop branch.
 
-
+![Screen Shot 2021-09-13 at 8 29 38](https://user-images.githubusercontent.com/24994818/133092868-8b28bb21-c6db-4c63-814e-d5b87b491bc6.png)
+![Screen Shot 2021-09-13 at 8 30 18](https://user-images.githubusercontent.com/24994818/133092874-1479c0dd-36d4-43a9-9465-ab0300182240.png)
+![Screen Shot 2021-09-13 at 8 30 45](https://user-images.githubusercontent.com/24994818/133092883-550a225f-a5fa-401c-97cc-0839b947854f.png)
+![Screen Shot 2021-09-13 at 8 31 29](https://user-images.githubusercontent.com/24994818/133092892-42fcfeef-d13e-481b-b1e9-4ced46694699.png)
