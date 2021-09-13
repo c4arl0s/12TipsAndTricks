@@ -12,6 +12,7 @@
 8. [x] [8. Aliases and Other Configurations](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-aliases-and-other-configurations)
 9. [x] [9. Conclusion](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-conclusion)
 10. [x] [10. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
+11. [x] [11. How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricks#11-how-to-create-a-global-gitignore-file)
  
 # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
@@ -576,6 +577,19 @@ git config --global alias.aliasName gitCommand
 ```
 Create a shortcut for a command and store it in the global configuration file
 
+# 11. [How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
+```console
+$ echo .DS_Store >> ~/.gitignore_global
+```
 
+then:
+
+```console
+git config --global core.excludesfile ~/.gitignore_global
+```
+
+Now each commit you will not be able to add any `.DS_Store` file.
+
+> If you already add a .DS_Store file in your repo, you have to delete it manually.
 
