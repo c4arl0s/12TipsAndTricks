@@ -13,6 +13,7 @@
 9. [x] [9. Conclusion](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-conclusion)
 10. [x] [10. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
 11. [x] [11. How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricks#11-how-to-create-a-global-gitignore-file)
+12. [x] [12. How to create a pull request from your local branch]()
  
 # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
@@ -592,4 +593,17 @@ git config --global core.excludesfile ~/.gitignore_global
 Now each commit you will not be able to add any `.DS_Store` file.
 
 > If you already add a .DS_Store file in your repo, you have to delete it manually.
+
+12. [How to create a pull request from your local branch]()
+
+You can create a pull request on your own project just pushing your branch
+
+Console output:
+
+```console
+$ git push origin <nameOfTheBranch>
+```
+
+Then on Github will appear the message that you can generate a pull request, follow the instructions and ask for the pull request, someone in the project then can merge your branch on main or develop branch.
+
 
