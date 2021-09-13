@@ -14,7 +14,7 @@
 10. [x] [10. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
 11. [x] [11. How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricks#11-how-to-create-a-global-gitignore-file)
 12. [x] [12. How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricks#12-how-to-create-a-pull-request-from-your-local-branch)
-13. [How to fetch a branch from another team member and merge]()
+13. [x] [How to fetch a branch from another team member and merge]()
 
 # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
@@ -612,7 +612,7 @@ Then on Github will appear the message that you can generate a pull request, fol
 ![Screen Shot 2021-09-13 at 8 30 45](https://user-images.githubusercontent.com/24994818/133092883-550a225f-a5fa-401c-97cc-0839b947854f.png)
 ![Screen Shot 2021-09-13 at 8 31 29](https://user-images.githubusercontent.com/24994818/133092892-42fcfeef-d13e-481b-b1e9-4ced46694699.png)
 
-13. [How to fetch a branch from another team member and merge]()
+# 13. [How to fetch a branch from another team member and merge](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 
 Once you did push (your buddy)  a branch to the repository, you can fetch the branch to your macbook with these commands:
