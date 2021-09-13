@@ -615,12 +615,28 @@ Then on Github will appear the message that you can generate a pull request, fol
 13. [How to fetch a branch from another team member and merge]()
 
 
-Once you did push a branch to the repository, you can fetch the branch to your macbook with these commands:
+Once you did push (your buddy)  a branch to the repository, you can fetch the branch to your macbook with these commands:
 
-Console output:
+1. Step 1: From your project repository, bring in the changes and test.
 
 ```console
-
+$ git fetch origin
+$ git checkout -b CSC/13-how-to-fetch-a-branch-and-merge-Only-Test origin/CSC/13-how-to-fetch-a-branch-and-merge
 ```
- 
 
+> In this case I had to create another branch with different name in order to test the branch that it is on `origin` (because I have not buddy :-( )
+
+2. Step 2: Run a test, verify if everything is ok.
+
+3. Step 3: Merge the changes and update on GitHub.
+
+```console
+$ git checkout master
+$ git merge --no-ff CSC/13-how-to-fetch-a-branch-and-merge
+```
+
+4. Step 4: Push the current branch (master) to origin.
+
+```console
+git push origin master
+```
