@@ -14,7 +14,8 @@
 10. [x] [10. Quick Reference](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#-quick-reference)
 11. [x] [11. How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricks#11-how-to-create-a-global-gitignore-file)
 12. [x] [12. How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricks#12-how-to-create-a-pull-request-from-your-local-branch)
- 
+13. [How to fetch a branch from another team member and merge]()
+
 # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 This module presents a broad survey of useful Git utilities. We will take a step back from the theoretical aspects of Git and focus on common tasks like preparing a project for release and backing up a repository. While working through this module, your goal shouldn't be to understand why they were created and when they might come in handy.
@@ -610,3 +611,16 @@ Then on Github will appear the message that you can generate a pull request, fol
 ![Screen Shot 2021-09-13 at 8 30 18](https://user-images.githubusercontent.com/24994818/133092874-1479c0dd-36d4-43a9-9465-ab0300182240.png)
 ![Screen Shot 2021-09-13 at 8 30 45](https://user-images.githubusercontent.com/24994818/133092883-550a225f-a5fa-401c-97cc-0839b947854f.png)
 ![Screen Shot 2021-09-13 at 8 31 29](https://user-images.githubusercontent.com/24994818/133092892-42fcfeef-d13e-481b-b1e9-4ced46694699.png)
+
+13. [How to fetch a branch from another team member and merge]()
+
+
+Once you did push a branch to the repository, you can fetch the branch to your macbook with these commands:
+
+Console output:
+
+```console
+
+```
+ 
+
