@@ -15,7 +15,8 @@
 11. [x] [11. How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricks#11-how-to-create-a-global-gitignore-file)
 12. [x] [12. How to create a pull request from your local branch](https://github.com/c4arl0s/12TipsAndTricks#12-how-to-create-a-pull-request-from-your-local-branch)
 13. [x] [13. How to fetch a branch from another team member and merge](https://github.com/c4arl0s/12TipsAndTricks#13-how-to-fetch-a-branch-from-another-team-member-and-merge)
-
+14. [x] [14. Remove .DS_Store files recursively](https://github.com/c4arl0s/12TipsAndTricks#14-remove-ds_store-files-recursively)
+ 
 # [12 Tips and Tricks](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 This module presents a broad survey of useful Git utilities. We will take a step back from the theoretical aspects of Git and focus on common tasks like preparing a project for release and backing up a repository. While working through this module, your goal shouldn't be to understand why they were created and when they might come in handy.
@@ -579,6 +580,7 @@ git config --global alias.aliasName gitCommand
 ```
 Create a shortcut for a command and store it in the global configuration file
 
+<<<<<<< Updated upstream
 # 11. [How to create a global gitignore file](https://github.com/c4arl0s/12TipsAndTricksRysGitTutorial#12-tips-and-tricks---content)
 
 ```console
@@ -640,3 +642,27 @@ $ git merge --no-ff CSC/13-how-to-fetch-a-branch-and-merge
 ```console
 $ git push origin master
 ```
+
+# 14. [Remove .DS_Store files recursively](https://github.com/c4arl0s/12TipsAndTricks#12-tips-and-tricks---content)
+
+If you already created these `.DS_Store` files, use this command.
+
+```console
+find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
+```
+Console output example:
+
+```console
+rm 'Projects/.DS_Store'
+rm 'Projects/1ButtonsProjectCommonInputControls/.DS_Store'
+rm 'Projects/2SwitchesProjectCommonInputControls/.DS_Store'
+rm 'Projects/3SlidersProjectCommonInputControls/.DS_Store'
+rm 'Projects/4TextFieldsProjectCommonInputControls/.DS_Store'
+rm 'Projects/5ActionsAndOutletsProjectCommonInputControls/.DS_Store'
+rm 'Projects/6GestureRecognizersProjectCommonInputControls/.DS_Store'
+rm 'Projects/7ProgrammaticActionsProjectCommonInputControls/.DS_Store'
+rm 'Projects/LabStep1CreateYourViewInInterfaceBuilderTwoButtons/.DS_Store'
+rm 'Projects/LabStep2CreateOutletsAndActionsTwoButtons/.DS_Store'
+rm 'Projects/LabStep3AddCodeForYourActionsTwoButtons/.DS_Store'
+```
+
